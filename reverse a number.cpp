@@ -23,7 +23,6 @@ main()
 	rev=rev*10+r;
 	//printf("%d",r);
 	n=q;
-	
 	printf("therefore reverse of no. n %d is %d",n1,rev);
 	
 	getch();
