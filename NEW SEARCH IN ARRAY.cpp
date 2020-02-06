@@ -2,7 +2,7 @@
 #include <conio.h>
 int main()
 {
-	int i,a[i],n,item,flag=0;
+	int i,a[12],n,item,flag=0;
 	char ans,again,EXIN;
 	printf("How many Numbers you want to display\n");
 	scanf("%d",&n);
@@ -34,23 +34,23 @@ int main()
 			}
 			    if(flag==1)
 			    {
-			    	printf("Your item is found at location %d",i);
-			    	printf("Press X to try again and E to exit");
+			    	printf("Your item is found at location %d\n",i);
+			    	printf("Press X to try again and E to exit\n");
 			    scanf(" %c",&again);
+			    	flag=0;
 				}
 				else
 			    {
-			    printf("Your item not found.Press X to try again and E to exit");
+			    printf("Your item not found.Press X to try again and E to exit\n");
 			    scanf(" %c",&again);
 			    }
-		    
         }
     }
 		while(again=='X');
 	
         if(ans=='N')
         {
-        	printf("To enter new number press I else E to exit");
+        	printf("To enter new number press I else E to exit\n");
         	scanf(" %c",&EXIN);
         	switch(EXIN)
         	{
@@ -58,7 +58,7 @@ int main()
         		do
 				{
 				
-        		printf("Enter new number");
+        		printf("Enter new number\n");
         		scanf(" %d",&item);
         		for(i=1;i<=n;i++)
 		    {
@@ -70,13 +70,14 @@ int main()
 			}
 			    if(flag==1)
 			    {
-			    	printf("Your item is found at location %d",i);
-			    	printf("Press X to try again and E to exit");
+			    	printf("Your item is found at location %d\n",i);
+			    	printf("Press X to try again and E to exit\n");
 			    scanf(" %c",&again);
+			    flag=0;
 				}
 				else
 			    {
-			    printf("Your item not found.Press X to try again and E to exit");
+			    printf("Your item not found.Press X to try again and E to exit\n");
 			    scanf(" %c",&again);
 			    } 
 				}while(again=='X');
