@@ -34,6 +34,6 @@ int main()
             printf("%d, ", ptr[i]); 
         } 
     } 
-  
+  //VUP
     return 0; 
 }
