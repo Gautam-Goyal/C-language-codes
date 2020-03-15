@@ -35,4 +35,5 @@ int main()
 		printf("a[%d] --> %d\n",i,a[i]);
 	}
 	getch();
+//VUP
 }
